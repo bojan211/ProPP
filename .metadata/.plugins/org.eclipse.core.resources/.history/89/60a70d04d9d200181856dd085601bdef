@@ -1,0 +1,11 @@
+/*
+ * circularList.c
+ *
+ *  Created on: Oct 18, 2018
+ *      Author: rtrk
+ */
+#include "circularList.h"
+
+void ListCreate(listElem* head) {
+	head = NULL;
+}

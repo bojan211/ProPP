@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 18, 2018
+ *      Author: rtrk
+ */
+#include <stdio.h>
+#include "circularList.h"
+
+#define NELEM 20
+
+int main()
+{
+	listElem* head;
+	uint16_t i;
+
+	ListCreate(&head);
+
+	for(i = 0; i<NELEM; i++)
+	{
+		ListPush(&head, i);
+	}
+
+	ListPrint(head);
+
+	printf("AAAA");
+	return 0;
+}
+

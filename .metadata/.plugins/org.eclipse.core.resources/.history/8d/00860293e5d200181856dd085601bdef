@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 18, 2018
+ *      Author: rtrk
+ */
+#include <stdio.h>
+#include "circularList.h"
+
+int main()
+{
+	listElem* head;
+
+	ListCreate(&head);
+
+	if (head == NULL)
+		printf("AAA\n");
+
+	ListPush(&head, 1);
+	ListPush(&head, 2);
+	//ListPush(&head, 3);
+	//ListPush(&head, 4);
+
+	ListPrint(&head);
+
+	printf("AAAA");
+	return 0;
+}
+

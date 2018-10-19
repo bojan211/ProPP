@@ -1,0 +1,68 @@
+/*
+ * circularList.c
+ *
+ *  Created on: Oct 18, 2018
+ *      Author: rtrk
+ */
+#include "circularList.h"
+
+#include <stdlib.h>
+#include <stdio.h>
+
+void ListCreate(listElem** head)
+{
+	*head = NULL;
+}
+
+void ListPush(listElem** head, data_type new_data)
+{
+	/*struct listElem* new_elem = (struct listElem*) malloc(sizeof(struct listElem));
+	new_elem->data = new_data;
+
+	if (*head == NULL)
+	{
+		*head = new_elem;
+		new_elem->next = new_elem;
+	}
+	else
+	{
+		new_elem->next = (*head)->next;
+		*head = new_elem;
+	}*/
+	listElem *ptr1 = (struct listElem *)malloc(sizeof(struct listElem));
+	listElem *temp = *head;
+	ptr1->data = new_data;
+	ptr1->next = *head;
+
+	    /* If linked list is not NULL then set the next of last node */
+	    if (*head != NULL)
+	    {
+	        while (temp->next != *head)
+	            temp = temp->next;
+	        temp->next = ptr1;
+	    }
+	    else
+	        ptr1->next = ptr1; /*For the first node */
+
+	    *head = ptr1;
+}
+
+void ListPrint(listElem* head)
+{
+	/*listElem* temp = head;
+	while (temp->next != head)
+	{
+		printf("%d\n", temp->data);
+		temp = temp->next;
+	}*/
+	struct listElem *temp = head;
+	    if (head != NULL)
+	    {
+	        do
+	        {
+	            printf("%d ", temp->data);
+	            temp = temp->next;
+	        }
+	        while (temp != head);
+	    }
+}

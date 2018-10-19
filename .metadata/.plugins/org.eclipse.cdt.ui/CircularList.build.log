@@ -1,0 +1,17 @@
+15:22:21 **** Incremental Build of configuration Debug for project CircularList ****
+make all 
+make: Warning: File `subdir.mk' has modification time 0.051 s in the future
+Building file: ../circularList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"circularList.d" -MT"circularList.d" -o "circularList.o" "../circularList.c"
+Finished building: ../circularList.c
+ 
+Building target: libCircularList.so
+Invoking: GCC C Linker
+gcc -shared -o "libCircularList.so"  ./circularList.o   
+Finished building target: libCircularList.so
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+15:22:21 Build Finished (took 159ms)
+

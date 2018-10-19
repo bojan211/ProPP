@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 18, 2018
+ *      Author: rtrk
+ */
+#include <stdio.h>
+#include "circularList.h"
+
+int main()
+{
+	uint8_t i=0;
+	printf("CAO");
+
+	i++;
+	printf("%d",i);
+	return 0;
+}
+

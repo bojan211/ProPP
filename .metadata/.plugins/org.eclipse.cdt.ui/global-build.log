@@ -1,0 +1,14 @@
+15:22:24 **** Incremental Build of configuration Debug for project project ****
+make all 
+make: Warning: File `objects.mk' has modification time 0.067 s in the future
+Building target: project
+Invoking: GCC C Linker
+gcc -L/home/rtrk/bojan82/PROJEKAT/CircularList/Debug -o "project"  ./main.o   -lCircularList
+Finished building target: project
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+15:22:27 **** Incremental Build of configuration Debug for project project ****
+make all 
+make: Warning: File `subdir.mk' has modification time 0.051 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.

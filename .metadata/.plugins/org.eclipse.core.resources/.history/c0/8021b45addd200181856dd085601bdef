@@ -1,0 +1,24 @@
+/*
+ * circularList.h
+ *
+ *  Created on: Oct 18, 2018
+ *      Author: rtrk
+ */
+
+#ifndef CIRCULARLIST_H_
+#define CIRCULARLIST_H_
+
+#include <stdint.h>
+
+typedef int_least32_t data_type;
+
+typedef struct listElem
+{
+	data_type data;
+	struct listElem* next;
+} listElem;
+
+void ListCreate(listElem*);
+void ListPush(listElem*, data_type);
+
+#endif /* CIRCULARLIST_H_ */

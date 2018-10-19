@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 18, 2018
+ *      Author: rtrk
+ */
+#include <stdio.h>
+#include "circularList.h"
+
+int main()
+{
+	struct listElem head = (struct listElem*) malloc (sizeof(struct listElem))
+
+	return 0;
+}
+

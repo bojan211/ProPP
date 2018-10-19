@@ -1,0 +1,29 @@
+/*
+ * circularList.c
+ *
+ *  Created on: Oct 18, 2018
+ *      Author: rtrk
+ */
+#include "circularList.h"
+
+#include <stdlib.h>
+
+void ListCreate(listElem* head)
+{
+	head = NULL;
+}
+
+void ListPush(listElem* head, data_type new_data)
+{
+	struct listElem* new_elem = (struct listElem*) malloc(sizeof(struct listElem));
+
+	if (head == NULL) {
+		head = new_elem;
+		new_elem->next = head;
+	}
+	else {
+		new_elem->next = head->next;
+		head->next = new_elem;
+	}
+
+}
